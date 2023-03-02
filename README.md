@@ -1,5 +1,5 @@
 ## spectral operator learning
-# Here you find the **S**pectral **O**perator **L**earning **U**nder construc**TION**
+Here you find the **S**pectral **O**perator **L**earning **U**nder construc**TION**
 
 It's the code for the paper:
 - [Render unto Numerics : Orthogonal Polynomial Neural Operator for PDEs with Non-periodic Boundary Conditions](https://arxiv.org/abs/2206.12698)
