@@ -10,6 +10,7 @@ from utilities import *
 import h5py
 import chebypack as ch
 import matplotlib
+import functools
 
 x2phi = functools.partial(ch.Wrapper, [ch.dct, ch.cmp_neumann])
 phi2x = functools.partial(ch.Wrapper, [ch.icmp_neumann, ch.idct])
