@@ -9,7 +9,7 @@ from utilities import *
 import h5py
 import chebypack as ch
 import matplotlib
-
+import functools
 x2phi = functools.partial(ch.Wrapper, [ch.dct, ch.cmp])
 phi2x = functools.partial(ch.Wrapper, [ch.icmp, ch.idct])
 idctn = functools.partial(ch.Wrapper, [ch.idct])
