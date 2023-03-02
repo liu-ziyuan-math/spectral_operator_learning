@@ -1,5 +1,5 @@
 # spectral_operator_learning
-Here you find the Spectral Operator Learning Under construcTION
+Here you find the *S*pectral *O*perator *L*earning *U*nder construc*TION*
 
 
 It's the code for the paper:
