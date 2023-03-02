@@ -203,3 +203,11 @@ if __name__ == '__main__':
     p = p[:, (0, -1)]
     ans, _ = torch.max(torch.abs(p), dim=1)
     print(torch.mean(ans))
+
+#     show = my_plt(model, x_data[-test_size:, ...], y_data[-test_size:, ...], -torch.cos(torch.linspace(0, np.pi, Nx)), myloss)
+#     j = -1
+
+#     plt.figure(figsize=(14, 10))
+#     j += 1
+#     show.ppt(j)
+#     plt.show()
