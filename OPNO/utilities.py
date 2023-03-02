@@ -67,3 +67,31 @@ class LpLoss(object):
 
     def __call__(self, x, y):
         return self.rel(x, y)
+
+    
+    
+class my_plt(object):
+    def __init__(self, model, x_data, y_data, mesh, loss_fun, label='OPNO', clr='r'):
+        super(my_plt, self).__init__()
+
+        font1 = {'size': 23}
+        with torch.no_grad():
+            self.x, self.y = x_data.to(next(model.parameters()).device), y_data.detach().to('cpu')
+            self.yy = model(self.x).cpu().reshape(x_data.shape[0], -1)
+            self.mesh = mesh
+            self.label = label
+            self.lossfun = loss_fun
+            self.clr = clr
+
+    def ppt(self, j):
+        # j += 1
+        plt.cla()
+        plt.scatter(self.mesh, self.yy[j, :], color=self.clr, s=200, alpha=0.75, label=self.label)
+        # plt.plot(-torch.cos(torch.linspace(0, np.pi, Nx)), yy[j, :].detach().to('cpu'),color='r')
+        plt.plot(self.mesh, self.x[j, :, 0].cpu(), ':', label='$u_0$', linewidth=5)
+        plt.plot(self.mesh, self.y[j, :], color='b', label='$u_1$ ref',
+                    linewidth=2)  # - y[j, :]
+        print(self.lossfun(self.yy[j:j+1, :], self.y[j:j+1, :]))
+
+        plt.tick_params(labelsize=40)
+        plt.legend(fontsize=40)
