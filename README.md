@@ -1,13 +1,13 @@
-## spectral operator learning
+# spectral operator learning
 Here you find the **S**pectral **O**perator **L**earning **U**nder construc**TION**
 
 It's the code for the paper:
 - [Render unto Numerics : Orthogonal Polynomial Neural Operator for PDEs with Non-periodic Boundary Conditions](https://arxiv.org/abs/2206.12698)
 
-# Requirements
+## Requirements
 This program is developed based on pytorch 1.9.0, which may not be compatible with versions lower than this.
 
-# datasets
+## datasets
 The datasets are now available at
 - [dataset](https://drive.google.com/drive/folders/1YLsK5GkFpRvrUI4olSEBaz1Jo7T7lO0C?usp=sharing)
 
@@ -21,5 +21,5 @@ For all of the input and output functions, the sampling on Chebyshev-Gauss-Lobat
 - For the Burgers-Neumann-BC dataset, the shape is [1100, 4097], due to the limitation of computational resources when generating it. 
 - For the heat-Robin-BC(with N=256) `heat_robinN256` dataset, it is of the shape [101000, 256].
 
-# Reproducing the experiment in paper
+## Reproducing the experiment in paper
 We fixed the random seeds as 0 in our experiments, so the reproducing should be easy. As for the detailed settings of hyperparameters, users can refer to `~/results/experiment_parameters.py`. The code is for reference only, and we do not recommend to insert them directly, 
