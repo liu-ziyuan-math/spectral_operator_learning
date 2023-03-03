@@ -5,7 +5,7 @@ It's the code for the paper:
 - [Render unto Numerics : Orthogonal Polynomial Neural Operator for PDEs with Non-periodic Boundary Conditions](https://arxiv.org/abs/2206.12698)
 
 ## Requirements
-This program is developed based on pytorch 1.9.0, which may not be compatible with versions lower than this.
+This program is developed based on pytorch 1.9.0. Older version may not support.
 
 ## datasets
 The datasets are now available at
