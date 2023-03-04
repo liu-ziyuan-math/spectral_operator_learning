@@ -23,3 +23,8 @@ For all of the input and output functions, the sampling on Chebyshev-Gauss-Lobat
 
 ## Reproducing the experiments in paper
 We fixed the random seeds as 0 in our experiments, so the reproducing should be easy. As for the detailed settings of hyperparameters, users can refer to `~/results/experiment_parameters.py`. The code is for reference only, and we do not recommend to insert them directly, 
+
+## Links
+- [shenfun](https://github.com/spectralDNS/shenfun), an excellent PDE solver based on spectral Galerkin methods.
+- [chebfun](https://www.chebfun.org/), a famous PDE solver mainly based on spectral collocation method.
+- [Fourier Neural Operator](https://github.com/neuraloperator/neuraloperator), the state-of-the-art neural operator for parametric PDEs. 
