@@ -7,7 +7,7 @@ It's the code for the paper:
 We've complete the experients and updated the paper. Interesting results are demonstrated, for example, the deep learning method outperforms 2nd-order finite difference method with considerably fine mesh
 
 ![image](https://github.com/liu-ziyuan-math/spectral_operator_learning/blob/main/OPNO/results/vs-fdm.png)
-
+ 
 ## Requirements
 This program is developed based on pytorch 1.9.0. Older version may not support.
 
