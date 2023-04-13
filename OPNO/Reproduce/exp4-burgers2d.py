@@ -21,7 +21,7 @@ torch.cuda.manual_seed(0)
 torch.backends.cudnn.deterministic = True
 
 
-epochs = 10
+epochs = 3000
 batch_size = 20
 learning_rate = 0.001
 step_size = 300  # for StepLR
